@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Quicksand&display=swap');
+
+body, html {
+    margin: 0;
+    min-height: 100vh;
+}
+
+body {
+    background: radial-gradient(#1b2735 0%, #090a0f 100%) no-repeat;
+
+    color: #FFFFFF;
+}
+
+section {
+    padding: 5vh 5vh;
+    
+    position: relative;
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+/*.section:not(:last-child)::after {*/
+/*    content: "";*/
+/*    */
+/*    position: absolute;*/
+/*    */
+/*    width: 50vw;*/
+/*    height: 5px;*/
+/*    */
+/*    background-color: rgba(255, 255, 255, 0.1);*/
+/*    */
+/*    bottom: 0;*/
+/*    */
+/*    border-radius: 5px;*/
+/*}*/
+
+ul {
+    list-style-type: none;
+    
+    padding: 0;
+    margin: 0;
+}
+
+#logo {
+    gap: 5vh;
+}
+
+h1, h2, h3 {
+    font-family: "Josefin Sans", sans-serif;
+    
+    margin: 0;
+}
+
+#content-title {
+    font-size: 4vh;
+}
+
+.content-description {
+    font-size: 3vh;
+    
+    font-family: "Quicksand", sans-serif;
+}
+
+#logo-icon {
+    width: 25vh;
+    height: 25vh;
+    
+    border-radius: 100%;
+}
+
+#stack {
+    gap: 4vh;
+    
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.stack-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    
+    gap: 2vh;
+}
+
+.stack-section ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    gap: 2vh;
+}
+
+.stack-section ul li {
+    position: relative;
+}
+.stack-section ul li::before {
+    content: "";
+    
+    position: absolute;
+    
+    height: 3px;
+    width: 100%;
+    
+    bottom: -5px;
+    
+    border-radius: 5px;
+}
+.stack-section ul li.green::before {
+    background-color: #66BB6A;
+}
+.stack-section ul li.yellow::before {
+    background-color: #FFCA28;
+}
+.stack-section ul li.red::before {
+    background-color: #EF5350;
+}
+
+.stack-section img {
+    width: 8vh;
+    height: 8vh;
+}
+
+#repositories {
+    font-family: "Josefin-Sans", sans-serif;
+    font-size: 3vh;
+    
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 2vh;
+}
+
+#repositories p {
+    max-width: 80%;
+
+    font-size: 2vh;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    
+    margin-bottom: 0;
+}
+
+#repositories h2 {
+    font-size: 4vh;
+}
+
+#repositories h3 {
+    font-size: 3vh;
+}
+
+#repositories .icons {
+    margin-top: 1vh;
+    gap: 1vh;
+    
+    display: flex;
+}
+
+#repositories .icons li {
+    position: relative;
+}
+
+#repositories .icons a {
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+    
+    opacity: 0;
+}
+
+#repositories .icons img {
+    width: 4vh;
+    height: 4vh;
+}
+
+.splide__track {
+    height: 15vh;
+    width: 75%;
+    max-width: 500px;
+    
+    padding: 1vh;
+    
+    position: relative;
+
+    background-color: rgba(255, 255, 255, 0.03);
+
+    border-radius: 10px;
+}
+
+.splide__slide {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.splide__arrows {
+    position: absolute;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 100%;
+    height: 100%;
+}
+
+.splide__arrow {
+    background: none;
+    border: none;
+    
+    cursor: pointer;
+    
+    z-index: 1;
+}
+
+.splide__arrow img {
+    width: 4vh;
+    height: 4vh;
+}
+
+.splide__pagination {
+    display: none;
+}
